@@ -1,0 +1,9 @@
+version: "2"
+services:
+  node-api-mongo:
+    container_name: node-api-mongo
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./volumes/mongo:/data/node-api-mongo

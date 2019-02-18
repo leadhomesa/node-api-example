@@ -1,0 +1,19 @@
+root: true
+
+extends:
+- standard
+- plugin:prettier/recommended
+
+env:
+  node: true
+
+rules:
+  # JS
+  semi: ["error", "always"]
+  curly: ["error", "multi"]
+  indent: ["error", 2]
+  no-tabs: "off"
+  space-before-function-paren: "off"
+  prefer-arrow-callback: ["error"]
+  camelcase: ["error", { "properties": "always" }]
+  no-multi-spaces: ["error"]
